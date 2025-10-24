@@ -1,17 +1,14 @@
-# renovate: datasource=git-refs depName=https://github.com/InioX/matugen versioning=loose currentValue=main
-%global commit e85a6c9ac4efe2362afb6358f8d2f05556a1d1f1
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-
 %global debug_package %{nil}
 
 Name:           matugen
-Version:        %shortcommit
-Release:        0%?dist
+# renovate: datasource=github-releases depName=InioX/matugen
+Version:        2.4.1
+Release:        0%{?dist}
 Summary:        Material you color generation tool with templates
 
 License:        GPL-2.0
 URL:            https://github.com/InioX/matugen
-Source0:        %url/archive/%commit.tar.gz
+Source0:       %{url}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: rust
 BuildRequires: cargo
@@ -23,7 +20,7 @@ BuildRequires: clang
 %description %{_description}
 
 %prep
-%autosetup -n %{name}-%{commit}
+%autosetup
 
 %build
 # using clang here because seems that one of the dependencies fails to build with the default GCC configuration from fedora
