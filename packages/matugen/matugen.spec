@@ -1,5 +1,5 @@
 # renovate: datasource=git-refs depName=https://github.com/InioX/matugen versioning=loose currentValue=main
-%global commit 491e52d1dc2ba6868ed704aed8fa97325a7f0f5f
+%global commit de6381b5288c53763ba7c055661dc08ee8f107fa
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 %global debug_package %{nil}
