@@ -1,4 +1,4 @@
-# renovate: datasource=git-refs depName=https://github.com/quickshell-mirror/quickshell⏎ versioning=loose currentValue=main
+# renovate: datasource=git-refs depName=https://github.com/quickshell-mirror/quickshell versioning=loose currentValue=main
 %global commit      26531fc46ef17e9365b03770edd3fb9206fcb460
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
