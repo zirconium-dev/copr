@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 # renovate: datasource=git-refs depName=https://github.com/andyholmes/valent versioning=loose currentValue=main
-%global commit 6da10690832bd9902a66912ab9cbd03e0aa856fd
+%global commit d880881d6e78f8b19159effdd619d693467d0061
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:               valent-git
