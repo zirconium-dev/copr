@@ -2,7 +2,7 @@
 
 Name:           iio-niri
 # renovate: datasource=github-releases depName=Zhaith-Izaliel/iio-niri
-Version:        1.3.0
+Version:        2.0.0
 Release:        0%{?dist}
 Summary:        Material you color generation tool with templates
 
